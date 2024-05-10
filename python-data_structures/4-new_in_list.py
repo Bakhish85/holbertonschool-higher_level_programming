@@ -6,7 +6,7 @@ def new_in_list(my_list, idx, element):
     elif idx >= len(my_list):
         return my_list
     else:
-        for i,k in enumerate(my_list):
+        for i, k in enumerate(my_list):
             new_list.append(my_list[i])
         new_list[idx] = element
         return new_list
