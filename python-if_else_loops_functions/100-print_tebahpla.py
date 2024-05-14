@@ -5,4 +5,5 @@ for ascii_number in range(97,123):
         ascii_number -= 32
     char_list.append(chr(ascii_number))
 char_list.reverse()
-print("".join(char_list), end="")
+char_string = "".join(char_list)
+print("{}".format(char_string), end="")
