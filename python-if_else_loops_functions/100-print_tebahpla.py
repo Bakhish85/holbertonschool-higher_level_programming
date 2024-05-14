@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 char_list = []
 for ascii_number in range(97,123):
     if ascii_number % 2 == 1:
