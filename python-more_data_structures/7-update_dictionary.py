@@ -13,5 +13,5 @@ def update_dictionary(a_dictionary, key, value):
             - If a key does not exist in the dictionary
             it will be created
     """
-    a_dictionary[key] = values
+    a_dictionary[key] = value
     return a_dictionary
