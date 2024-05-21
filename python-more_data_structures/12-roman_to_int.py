@@ -5,13 +5,13 @@ def roman_to_int(roman_string):
     Args:
         roman_string (str): The input string - roman numeral.
     Returns:
-        int:    Must return an integer. 
+        int:    Must return an integer.
             - You can assume the number will be between 1 to 3999.
             - If the roman_string is not a string or None, return 0.
     """
-    if type(roman_string) != str:
+    if type(roman_string) is str:
         return 0
-    elif roman_string == None:
+    elif roman_string is None:
         return 0
     else:
         number = 0
@@ -28,7 +28,7 @@ def roman_to_int(roman_string):
                     number += 500
             elif symbol == 'C':
                 if roman_string[i-1] == 'X' and i != 0:
-                    number += 89
+                    number += 80
                 else:
                     number += 100
             elif symbol == 'L':
