@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
             - You can assume the number will be between 1 to 3999.
             - If the roman_string is not a string or None, return 0.
     """
-    if type(roman_string) is str:
+    if type(roman_string) is not str:
         return 0
     elif roman_string is None:
         return 0
