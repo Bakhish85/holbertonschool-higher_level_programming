@@ -7,7 +7,7 @@ def safe_print_list(my_list=[], x=0):
                 count += 1
                 print("{}".format(number), end="")
         print("")
-    except:
+    except TypeError:
         print("Unknown error")
     finally:
         return count
