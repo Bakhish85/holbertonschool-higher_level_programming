@@ -21,7 +21,9 @@ class Square:
                             format (x, y).
 
     Methods:
-        __init__(size=0, position=(0, 0):   Initializes a enw Square instance w                                             with the given size and position
+        __init__(size=0, position=(0, 0):   Initializes a new Square
+                                            instance with the given
+                                            size and position
         area():             Calculates the area of the square
         my_print():         Prints a visual representation of the
                             e using '#' characters.
@@ -35,11 +37,10 @@ class Square:
             raise ValueError('size must be >= 0')
         self.__size = size
         if (type(position[0]) is not int or position[0] < 0) or\
-            (type(position[1]) is not int or position[1] < 0):
-            raise TypeError("position must be a tuple of 2 positive
-            integers")
+                (type(position[1]) is not int or position[1] < 0):
+            raise TypeError("position must be a tuple of 2 positive\
+                            integers")
         self.__position
-            
 
     def area(self):
         return self.__size ** 2
