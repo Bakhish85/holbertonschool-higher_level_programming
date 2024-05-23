@@ -2,8 +2,11 @@
 """
 Module: square
 
-This module defines a simple Square class for representing and manipulating square objects.
+This module defines a simple Square class
+for representing and manipulating square objects.
 """
+
+
 class Square:
     """
     A class representing a square.
