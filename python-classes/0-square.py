@@ -1,9 +1,6 @@
 #!/usr/bin/python3
+"""Square Class
+This class does not do anything for the moment.
+"""
 class Square:
-    """
-    A class representing a square.
-    This class provides a simple way to create
-    and manipulate square objects.
-    Each square is defined by its side length.
-    """
     pass
