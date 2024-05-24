@@ -8,6 +8,6 @@ def safe_function(fct, *args):
     except ZeroDivisionError as e:
         sys.stderr.write(f"Exception: {e}\n")
         return None
-    except Index Error as e:
+    except IndexError as e:
         sys.stderr.write(f"Exception: {e}\n")
         return None
