@@ -47,13 +47,14 @@ class Square:
             return ""
         else:
             _str = ""
-            for _ in range(self.__size):
+            for i in range(self.__size):
                 if self.__position[1] > 0:
                     _str += "_" * self.__position[0]
                 else:
                     _str += " " * self.__position[0]
                 _str += "#" * self.__size
-                _str += "\n"
+                if i != self.__size - 1:
+                    _str += "\n"
             return _str
 
     def area(self):
