@@ -33,12 +33,12 @@ def matrix_divided(matrix, div):
     # containing only integers or floats
     for row in matrix:
         if type(row) not in [list]:
-            raise TypeError("matrix must be a matrix(list of lists)
+            raise TypeError("matrix must be a matrix(list of lists)\
                             of integers/floats")
         else:
             for element in row:
                 if type(element) not in [float, int]:
-                    raise TypeError("matrix must be a matrix(list
+                    raise TypeError("matrix must be a matrix(list\
                                     of lists) of integers/floats")
     # Check if each row of the matrix has the same size
     size = len(matrix[0])
