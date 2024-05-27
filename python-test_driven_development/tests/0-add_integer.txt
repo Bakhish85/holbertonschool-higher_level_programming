@@ -1,29 +1,41 @@
-Test Cases for add_integer Function:
+===============================
+0. Integer addition module
+===============================
 
-Test Case 1:
-Input: a = 10, b = 20
-Expected Output: 30
+Import module:
+==============
+	>>> add_integer = __import__('0-add_integer').add_integer
 
-Test Case 2:
-Input: a = -5, b = 10
-Expected Output: 5
+Function:
+=========
+Write a function that adds two integers.
 
-Test Case 3:
-Input: a = 3.5, b = 7
-Expected Output: 10
+Operations:
+===========
+'a' and 'b' must be integer or float. Otherwise raise a TypeError Exception
+with the message 'a must be an integer' or 'b must be an integer'.
 
-Test Case 4:
-Input: a = 5, b = 7.5
-Expected Output: 12
+Section // Non-Parameters:
+==========================
 
-Test Case 5:
-Input: a = 2.5, b = 3.5
-Expected Output: 5
+Test case #0: A test case without parameters
 
-Test Case 6:
-Input: a = 100, b = 98
-Expected Output: 198
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
 
-Test Case 7:
-Input: a = -10, b = -20
-Expected Output: -30
+Test case #1: A test case for an argument with no assigned value
+	>>> add_integer(a, 123)
+	Traceback (most recent call last):
+	NameError: name 'a' is not defined
+
+Test case #2: A test case for using the default value of parameter 'b'
+	>>> add_integer(2)
+	100
+
+Test case #3: A test case for using the default value of parameter 'b'
+		with the float parameter 'a'
+	>>> add_integer(1.0)
+	99
+	
+
