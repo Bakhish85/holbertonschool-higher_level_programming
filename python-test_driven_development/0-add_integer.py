@@ -7,6 +7,8 @@ This module provides arithmetic operations for integers.
 Functions:
     - add_integer(a, b=98): Adds two integers together.
 """
+
+
 def add_integer(a, b=98):
     """
     Adds two integers together.
