@@ -1,0 +1,73 @@
+======================
+4. Print square module
+======================
+
+Import module
+=============
+	>>> print_square = __import__('4-print_square').print_square
+
+Functions
+=========
+Write a function that prints a square with the character #.
+
+Operations
+==========
+
+* size must be an integer, otherwise raise a TypeError 
+exception with the message size must be an integer
+
+* if size is less than 0, raise a ValueError 
+exception with the message size must be >= 0
+
+* if size is a float and is less than 0, raise a TypeError 
+exception with the message size must be an integer
+
+
+Section // Non-Parameters
+=========================
+
+Test case #0: A test case without parameter
+	
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+Section // Incorrect type of parameter
+======================================
+
+Test case #1: A test case for the size with type of str.
+	
+	>>> print_square('four')
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Tast case #2: A test case for the size with type of float.
+
+	>>> print_square(3.8)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Test case #3: A test case for the size with negative integer.
+	
+	>>> print_square(-4)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+Test case #4: A test case for the size with negative float.
+
+	>>> print_square(-3.5)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Section // Correct type of parameter
+=====================================
+
+Test case #5: A test case for the size with integer > 0.
+
+	>>> print_square(5)
+	#####
+	#####
+	#####
+	#####
+	#####
+
