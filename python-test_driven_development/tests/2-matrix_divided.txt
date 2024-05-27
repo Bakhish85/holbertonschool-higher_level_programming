@@ -5,7 +5,7 @@
 Import module:
 ==============
 	
-	>>>matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 Function:
 =========
@@ -35,17 +35,17 @@ Section // Non-Parameters
 =========================
 
 Test case #0: A test case without parameters
-	>>>matrix_divided()
+	>>> matrix_divided()
 	Traceback (most recent call last):
 	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
 Test case #1: A test case with no assigned value for matrix
-	>>>matrix_divided(matrix, 3)
+	>>> matrix_divided(matrix, 3)
 	Traceback (most recent call last):
 	NameError: name 'matrix' is not defined
 
 Test case #2: A test case with no assigned values for div
-	>>>matrix_divided([[1, 2], [3, 4]], div)
+	>>> matrix_divided([[1, 2], [3, 4]], div)
 	Traceback (most recent call last):
 	NameError: name 'div' is not defined
 
@@ -54,17 +54,17 @@ Section // Bad Divisor
 ======================
 
 Test case #3: A test case for div with value of 0.
-	>>>matrix_divided([[1, 2], [3, 4]], 0)
+	>>> matrix_divided([[1, 2], [3, 4]], 0)
 	Traceback (most recent call last):
 	ZeroDivisionError: division by zero
 
 Test case #4: A test case for div with the type of 'str'
-	>>>matrix_divided([[1, 2], [3, 4]], '3')
+	>>> matrix_divided([[1, 2], [3, 4]], '3')
 	Traceback (most recent call last):
 	TypeError: div must be a number
 
 Test case #5: A test case for div with the value of float.
-	>>>matrix_divided([[1, 2], [3, 4]], 3.0)
+	>>> matrix_divided([[1, 2], [3, 4]], 3.0)
 	[[0.33, 0.67], [1.0, 1.33]]
 
 Test case #
