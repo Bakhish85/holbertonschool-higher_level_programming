@@ -10,7 +10,7 @@ Functions:
 """
 
 
-def say_my_name(first_name, last_name):
+def say_my_name(first_name, last_name=""):
     """
     Prints the full name using the provided
     first name and last name.
