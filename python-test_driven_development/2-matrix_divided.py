@@ -54,6 +54,5 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     # Divide each element of the matrix by the divisor,
     # rounding the result to two decimal places
-    new_matrix =
-    list(map(lambda row: [round(x / div, 2) for x in row], matrix))
+    new_matrix = list(map(lambda row: [round(x / div, 2) for x in row], matrix))
     return new_matrix
