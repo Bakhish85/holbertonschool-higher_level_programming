@@ -1,0 +1,29 @@
+Test Cases for add_integer Function:
+
+Test Case 1:
+Input: a = 10, b = 20
+Expected Output: 30
+
+Test Case 2:
+Input: a = -5, b = 10
+Expected Output: 5
+
+Test Case 3:
+Input: a = 3.5, b = 7
+Expected Output: 10
+
+Test Case 4:
+Input: a = 5, b = 7.5
+Expected Output: 12
+
+Test Case 5:
+Input: a = 2.5, b = 3.5
+Expected Output: 5
+
+Test Case 6:
+Input: a = 100, b = 98
+Expected Output: 198
+
+Test Case 7:
+Input: a = -10, b = -20
+Expected Output: -30
