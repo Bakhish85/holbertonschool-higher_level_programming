@@ -44,8 +44,7 @@ def matrix_divided(matrix, div):
     size = len(matrix[0])
     for i in range(len(matrix)):
         if len(matrix[i]) != size:
-            raise TypeError
-            ("Each row of the matrix must have the same size")
+            raise TypeError("Each row of the matrix must have the same size")
     # Check if div is a number (either a float or an integer)
     if type(div) not in [float, int]:
         raise TypeError("div must be a number")
