@@ -67,5 +67,24 @@ Test case #5: A test case for div with the value of float.
 	>>> matrix_divided([[1, 2], [3, 4]], 3.0)
 	[[0.33, 0.67], [1.0, 1.33]]
 
-Test case #
+Section // Incorrect matrix
+===========================
+
+Test case #6: A test case for matrix with rows from some of these are not lists.
+	>>> matrix = [[1, 2], 3, [4, 5]]
+	>>> matrix_divivded(matrix, 3)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test case #7: A test case for matrix with lists of no int or float.
+	>>> matrix = [[1, 'a'], [4, 'b']]
+	>>> matrix_divided(matrix, 4)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test case #8: A test case for matrix with different sizes of rows.
+	>>> matrix = [[1, 2], [3 , 4], [5, 6, 7]
+	>>> matrix_divided(matrix, 5)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
 
