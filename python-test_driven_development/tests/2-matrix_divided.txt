@@ -15,17 +15,21 @@ Write a function that divides all elements of a matrix.
 Operations:
 ===========
 
-- Matrix must be a list of lists of integers or floats,
+* Matrix must be a list of lists of integers or floats,
 otherwise raise a TypeError exception with the message
 matrix must be a matrix (list of lists) of integers/floats.
-- Each row of the matrix must be of the same size,
+
+* Each row of the matrix must be of the same size,
 otherwise raise a TypeError exception with the message
 Each row of the matrix must have the same size.
-- div must be a number (integer or float),
+
+* div must be a number (integer or float),
 otherwise raise a TypeError exception with the message
 div must be a number.
-- div can not be equal to 0, otherise raise a
+
+* div can not be equal to 0, otherise raise a
 ZeroDivisionError exception with the message division by zero.
+
 
 Section // Non-Parameters
 =========================
@@ -45,8 +49,10 @@ Test case #2: A test case with no assigned values for div
 	Traceback (most recent call last):
 	NameError: name 'div' is not defined
 
-Section // Div
-==============
+
+Section // Bad Divisor
+======================
+
 Test case #3: A test case for div with value of 0.
 	>>>matrix_divided([[1, 2], [3, 4]], 0)
 	Traceback (most recent call last):
@@ -61,5 +67,5 @@ Test case #5: A test case for div with the value of float.
 	>>>matrix_divided([[1, 2], [3, 4]], 3.0)
 	[[0.33, 0.67], [1.0, 1.33]]
 
-
+Test case #
 
