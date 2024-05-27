@@ -33,11 +33,13 @@ def matrix_divided(matrix, div):
     # containing only integers or floats
     for row in matrix:
         if type(row) not in [list]:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix (list of lists) "
+                            "of integers/floats")
         else:
             for element in row:
                 if type(element) not in [float, int]:
-                    raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                    raise TypeError("matrix must be a matrix (list of lists) "
+                                    "of integers/floats")
     # Check if each row of the matrix has the same size
     size = len(matrix[0])
     for i in range(len(matrix)):
@@ -51,5 +53,6 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     # Divide each element of the matrix by the divisor,
     # rounding the result to two decimal places
-    new_matrix = list(map(lambda row: [round(x / div, 2) for x in row], matrix))
+    new_matrix = list(map(
+        lambda row: [round(x / div, 2) for x in row], matrix))
     return new_matrix
