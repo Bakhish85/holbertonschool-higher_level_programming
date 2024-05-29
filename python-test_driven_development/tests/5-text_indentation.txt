@@ -30,7 +30,7 @@ Test case #1: A test case with blank
 
 	>>> text_indentation(" ")
 	 
-
+	 
 
 Section // Incorrect type of parameter
 ======================================
@@ -59,3 +59,4 @@ Test case #4: A test case with specific punctation marks
 
         >>> text_indentation('Quonam modo?')
         Quonam modo?
+	<BLANKLINE>

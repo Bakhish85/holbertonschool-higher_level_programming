@@ -28,7 +28,7 @@ def text_indentation(text):
     new_text = ""
     idx = 0
     while idx < len(text):
-        if text[idx-1] in mark_list and text[idx] == ' ':
+        if idx > 0 and text[idx-1] in mark_list and text[idx] == ' ':
             idx += 1
             continue
         elif text[idx] in mark_list:
