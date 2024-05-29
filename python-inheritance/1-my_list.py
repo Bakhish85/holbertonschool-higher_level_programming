@@ -19,5 +19,6 @@ class MyList(list):
         print_sorted(self): Prints the elements
         of the list in the sorted order.
     """
-    new_list = sorted(self)
-    print(new_list)
+    def print_sorted(self):
+        new_list = sorted(self)
+        print(new_list)
