@@ -26,6 +26,11 @@ Test case #0: A test case without parameter
         Traceback (most recent call last):
         TypeError: text_indentation() missing 1 required positional argument: 'text'
 
+Test case #1: A test case with blank
+
+	>>> text_indentation(" ")
+	 
+
 
 Section // Incorrect type of parameter
 ======================================
