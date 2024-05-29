@@ -32,7 +32,7 @@ class Rectangle:
                         rectangle with '#' characters.
         __repr__(self): Returns a string representation of the rectangle
                         to be able to recreate a new instance by using eval()
-        __del__(self):  Prints the message Bye rectangle... 
+        __del__(self):  Prints the message Bye rectangle...
                         when an instance of Rectangle is deleted
     """
     def __init__(self, width=0, height=0):
