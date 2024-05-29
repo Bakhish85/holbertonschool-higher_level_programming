@@ -16,4 +16,5 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_values(self):
         # Test if the argument of function is list.
-        self.assertRaises(ValueError, max_integer, [1, 2, '3', 4])
+        self.assertRaises(ValueError):
+            max_integer([1, 2, '3', 4])
