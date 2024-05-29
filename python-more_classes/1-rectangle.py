@@ -27,13 +27,11 @@ class Rectangle:
         width(self, value): Setter method for setting the width of rectengle
         height(self, value): Setter method for setting the height of rectangle
     """
-
-
     def __init__(self, width=0, height=0):
         if type(height) not in [float, int]:
             raise TypeError("height must be an integer")
         elif height < 0:
-            raise ValueError("height must be >= 0")        
+            raise ValueError("height must be >= 0")
         self.__height = height
         if type(width) not in [float, int]:
             raise TypeError("width must be an integer")
