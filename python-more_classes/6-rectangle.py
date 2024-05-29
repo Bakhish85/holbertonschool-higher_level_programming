@@ -18,7 +18,8 @@ class Rectangle:
     Attributes:
         width(int): The width of the rectangle
         height(int): The height of the rectangle.
-        number_of_instances (int): Total number of instances of Rectangle class.
+        number_of_instances (int):  Total number of instances of
+                                    Rectangle class.
 
     Methods:
         __init__(self, width=0, height=0):  Initializes a
@@ -37,6 +38,7 @@ class Rectangle:
                         when an instance of Rectangle is deleted
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         if type(height) not in [float, int]:
             raise TypeError("height must be an integer")
