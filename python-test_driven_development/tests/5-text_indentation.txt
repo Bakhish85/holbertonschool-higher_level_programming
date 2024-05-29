@@ -1,0 +1,56 @@
+==========================
+5. Text indentation module
+==========================
+
+Import module
+=============
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Function
+========
+Write a function that prints a text with 2 new lines
+after each of these characters: ., ? and :
+
+Operations
+==========
+text must be a string, otherwise raise a TypeError
+exception with the message text must be a string
+
+
+Section // Non-parameters
+=========================
+
+Test case #0: A test case without parameter
+
+        >>> text_indentation()
+        Traceback (most recent call last):
+        TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+Section // Incorrect type of parameter
+======================================
+
+Test case #1: A test case for the text with type of integer
+
+        >>> text_indentation(12)
+        Traceback (most recent call last):
+        TypeError: text must be a string
+
+Test case #2: A test case for the text with type of float
+
+        >>> text_indentation(12.5)
+        Traceback (most recent call last):
+        TypeError: text must be a string
+
+Section // Correct type of paramater
+====================================
+
+Test case #3: A test case without punctuation marks
+
+        >>> text_indentation('Lorem ipsum dolor sit amet, consectetur adipiscing elit')
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+Test case #4: A test case with specific punctation marks
+
+        >>> text_indentation('Quonam modo?')
+        Quonam modo?
