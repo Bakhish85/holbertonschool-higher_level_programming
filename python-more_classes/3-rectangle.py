@@ -79,6 +79,8 @@ class Rectangle:
 
     def __str__(self):
         hash_rec = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
         for h in range(self.__height):
             for w in range(self.__width):
                 hash_rec += "#"
