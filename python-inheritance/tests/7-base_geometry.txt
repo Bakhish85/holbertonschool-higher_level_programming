@@ -79,7 +79,7 @@ Test case #6:   A test case with boolean value
 Section // ValueError
 =====================
 
-Test case #4:	A test case with 0.
+Test case #7:	A test case with 0.
 
 	>>> try:
 	...	bg.integer_validator("age", 0)
@@ -87,7 +87,7 @@ Test case #4:	A test case with 0.
 	...	print("[{}] {}".format(e.__class__.__name__, e))
 	[ValueError] age must be greater than 0
 
-Test case #5:	A test case with negative number.
+Test case #8:	A test case with negative number.
 
 	>>> try:
 	...	bg.integer_validator("distance", -4)
@@ -99,15 +99,9 @@ Test case #5:	A test case with negative number.
 Section // No parameter
 =======================
 
-Test case #6: A test case with no parameters.
+Test case #9: A test case with no parameters.
 	>>> try:
     	...	bg.integer_validator()
 	... except Exception as e:
 	...	print("[{}] {}".format(e.__class__.__name__, e))
-	[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-
-
-
-
-
+	[TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
