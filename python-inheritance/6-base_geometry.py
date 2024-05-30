@@ -17,7 +17,7 @@ class BaseGeometry:
     Methods:
         - area(self):   This method is intended to calculate
         the area of geometric shape. However it is not implemented
-        instead it raises an exception to indicate that derived 
+        instead it raises an exception to indicate that derived
         classes must override this method with their own implementation.
     """
     def area(self):
