@@ -80,7 +80,7 @@ Test case #6: A test case with no parameters.
     	...	bg.integer_validator()
 	... except Exception as e:
 	...	print("[{}] {}".format(e.__class__.__name__, e))
-	[TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+	[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
 
