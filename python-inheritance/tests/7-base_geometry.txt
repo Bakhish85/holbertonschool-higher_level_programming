@@ -1,0 +1,89 @@
+=======================
+7. Base geometry module
+=======================
+
+Import module:
+==============
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+
+Function:
+=========
+Write a class BaseGeometry (based on 6-base_geometry.py).
+
+	* you can assume name is always a string
+	
+	* if value is not an integer: raise a TypeError
+	exception, with the message <name> must be an integer
+	
+	* if value is less or equal to 0: raise a ValueError
+	exception with the message <name> must be greater than 0
+
+Section // No exceptions
+========================
+
+Test case #0: 	A test case with good parameters.
+	
+	>>> bg.integer_validator("my_int", 12)
+
+
+Test case #1: 	A test case with good parameters.
+
+	>>> bg.integer_validator("width", 89)
+
+
+Section // TypeError
+====================
+
+Test case #2: 	A test case with string value
+
+	>>> try:
+	... 	bg.integer_validator("name", "John")
+	...except Exception as e:
+	...	print("[{}] {}".format(e.__class__.__name__, e))
+	[TypeError] name must be an integer
+
+Test case #3: 	A test case with float value
+
+	>>> try:
+    	...	bg.integer_validator("name", 3.7)
+	... except Exception as e:
+	...	print("[{}] {}".format(e.__class__.__name__, e))
+	[TypeError] name must be an integer
+
+
+Section // ValueError
+=====================
+
+Test case #4:	A test case with 0.
+
+	>>> try:
+	...	bg.integer_validator("age", 0)
+	... except Exception as e:
+	...	print("[{}] {}".format(e.__class__.__name__, e))
+	[ValueError] age must be greater than 0
+
+Test case #5:	A test case with negative number.
+
+	>>> try:
+	...	bg.integer_validator("distance", -4)
+	... except Exception as e:
+	...	print("[{}] {}".format(e.__class__.__name__, e))
+	[ValueError] distance must be greater than 0
+
+
+Section // No parameter
+=======================
+
+Test case #6: A test case with no parameters.
+	>>> try:
+    	...	bg.integer_validator()
+	... except Exception as e:
+	...	print("[{}] {}".format(e.__class__.__name__, e))
+	[TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+
+
+
+
