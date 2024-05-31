@@ -51,6 +51,7 @@ class Rectangle(BaseGeometry):
                         Rectangle object.
     """
     def __init__(self, width, height):
+        super().__init__()
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
@@ -76,6 +77,6 @@ class Square(Rectangle):
                         given size of one side.
     """
     def __init__(self, size):
-        self.integer_validator("size", size)
         super().__init__(size, size)
+        self.integer_validator("size", size)
         self.__size = size
