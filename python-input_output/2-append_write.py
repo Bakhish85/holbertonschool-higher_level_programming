@@ -4,7 +4,7 @@ This module provides functions for reading from and writing to files.
 """
 
 
-def append_write(filename="", text=""): 
+def append_write(filename="", text=""):
     """
     Append the specified text to the given file
     and return the number of characters added.
