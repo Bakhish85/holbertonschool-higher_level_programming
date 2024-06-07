@@ -19,5 +19,5 @@ def write_file(filename="", text=""):
         w.write(text)
     with open(filename, "r", encoding="utf-8") as r:
         r.read()
-        nb_character = r.tell() - 1
+        nb_character = r.tell()
         return nb_character
