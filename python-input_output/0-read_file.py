@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """This module provides a function to read the contents of a file."""
+
+
 def read_file(filename=""):
     """
     Read the contents of the specified file and print them to the console.
