@@ -18,4 +18,3 @@ def to_json_string(my_obj):
     """
     js_string = json.dumps(my_obj)
     return js_string
-
