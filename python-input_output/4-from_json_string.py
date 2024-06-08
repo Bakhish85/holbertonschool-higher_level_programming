@@ -18,5 +18,5 @@ def from_json_string(my_str):
         any:    A Python object representing
                 the input JSON formatted string.
     """
-    my_obj = json.load(my_str)
+    my_obj = json.loads(my_str)
     return my_obj
