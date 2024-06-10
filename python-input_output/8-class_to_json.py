@@ -18,6 +18,8 @@ def class_to_json(obj):
     if hasattr(obj, '__dict__'):
         attributes = obj.__dict__
         return {key: class_to_json(value) for key, value in attributes.items()}
+    elif isinstance(obj, dict):
+        return {key: class_to_json(value) for key, value in obj.items()}
     elif isinstance(obj, list):
         return [class_to_json(item) for item in obj]
     elif isinstance(obj, str):
