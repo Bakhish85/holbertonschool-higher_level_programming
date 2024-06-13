@@ -61,7 +61,7 @@ def fetch_and_save_posts():
             writer = csv.DictWriter(file, fieldnames=fieldnames)
 
             # Write the header row
-            writer.writerheader()
+            writer.writeheader()
 
             # Write each post as a row in the CSV file
             for post in data:
