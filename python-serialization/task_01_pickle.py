@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 This module provides a simple mechanism for serializing
 and deserializing Python objects using the pickle module.
